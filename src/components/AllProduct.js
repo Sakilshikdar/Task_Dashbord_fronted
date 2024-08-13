@@ -28,7 +28,7 @@ function AllProduct() {
     const ShowDelete = (product_id) => {
         var deleteConfirm = window.confirm("Are you sure you want to delete?");
         if (deleteConfirm) {
-            fetch(baseUrl + '/product/' + product_id,
+            fetch(baseUrl + '/product/' + product_id+'/',
                 {
                     method: 'DELETE'
                 }
