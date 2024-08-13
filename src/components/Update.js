@@ -8,7 +8,7 @@ function Update() {
 
 
     const { product_id } = useParams();
-    const baseurl = 'http://127.0.0.1:8000/';
+    const baseurl = 'https://dashboard-backend-jfha.onrender.com/';
     const [errorMsg, setErrorMsg] = useState('');
     const [successMsg, setSuccessMsg] = useState('');
     const [productData, setProductData] = useState({

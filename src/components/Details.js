@@ -4,7 +4,7 @@ import logo from './../logo.svg';
 
 
 function Details() {
-    const baseUrl = 'http://127.0.0.1:8000/'
+    const baseUrl = 'https://dashboard-backend-jfha.onrender.com/'
     const [productData, setProductData] = useState({});
     const {product_id} = useParams(); 
 

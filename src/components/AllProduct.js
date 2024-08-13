@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 
 function AllProduct() {
-     const baseUrl = 'http://127.0.0.1:8000/'
+     const baseUrl = 'https://dashboard-backend-jfha.onrender.com'
     const [products, setProducts] = useState([]); 
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchData(baseUrl + `products/`);
+        fetchData(baseUrl + `/products/`);
     }, []); // Empty dependency array means the effect runs only once on mount
 
     function fetchData(baseurl) {
@@ -40,12 +40,14 @@ function AllProduct() {
                 })
         }
     }
+
+
     
 
     return (
         <div className="container my-5">
             <div className='d-flex align-items-center justify-content-between'>
-                    <h3 className='mb-4 '>All Products
+                <h3 className='mb-4 '>All Products <span className='text-muted text-sm'>({products.length})</span>
                 </h3>
                 
                     <Link to="/create" className='mb-4  btn  btn-dark text-md-end'>Create Product <i className="fa-solid fa-arrow-right px-1"></i></Link>

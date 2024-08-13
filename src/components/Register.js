@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 function Register() {
 
-    const baseurl = 'http://127.0.0.1:8000/'
+    const baseurl = 'https://dashboard-backend-jfha.onrender.com/'
     const [formError, setFormError] = useState(false);
     const [errorMsg, setErrorMsg] = useState('');
     const [successMsg, setSuccessMsg] = useState('');
