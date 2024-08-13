@@ -21,7 +21,7 @@ function Header() {
               <a className="nav-link  active" aria-disabled="true">About us</a>
             </li>
             {
-              localStorage.getItem('customer_login') ?
+              localStorage.getItem('customer_login') || localStorage.getItem('customer') ?
                 <>
                   <Link to='/logout' className="nav-item">
                     <a className="nav-link active" aria-disabled="true">Logout</a>
